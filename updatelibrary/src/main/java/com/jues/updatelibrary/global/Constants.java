@@ -34,4 +34,21 @@ public class Constants {
         }
         return verName;
     }
+
+    /**
+     * manifest文件下配置信息  versionCode
+     *
+     * @param context
+     * @return
+     */
+    private static int getVerCode(Context context) {
+        int verName = 0;
+        try {
+            verName = context.getPackageManager().getPackageInfo(
+                    context.getPackageName(), 0).versionCode;
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+        }
+        return verName;
+    }
 }

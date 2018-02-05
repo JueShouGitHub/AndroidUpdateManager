@@ -35,7 +35,7 @@ public class UpdateManager {
     private final String versionName = "BusGCF.apk";
     /* 保存解析的XML信息 */
     HashMap<String, String> mHashMap;
-    private String apkurl = "http://app.eyuebus.com/Public/apk/BusGCF.apk";
+    private String apkurl = "";
     /* 下载保存路径 */
     private String mSavePath;
     //* 记录进度条数量 */
@@ -64,8 +64,6 @@ public class UpdateManager {
                     break;
             }
         }
-
-        ;
     };
 
     public UpdateManager(Context context, String apkurl) {
@@ -193,7 +191,7 @@ public class UpdateManager {
                     fos.close();
                     is.close();
                 }
-            } catch (IOException e) {
+            } catch (Exception e) {
                 e.printStackTrace();
             }
             // 取消下载对话框显示
