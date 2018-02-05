@@ -26,7 +26,7 @@ Add the dependency
         <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 ```
 
-######Step1 根据实际需要得到相关版本信息
+###### Step1 根据实际需要得到相关版本信息
 ```aidl 
     //当卡版本名称
     Constants.getVerName(Context context)//String
@@ -34,7 +34,7 @@ Add the dependency
     Constants.getVerCode(Context context)//int
 ```
 
-######Step2 调起更新进度弹窗
+###### Step2 调起更新进度弹窗
 ```aidl 
     //就一句话
     UpdateDialog dialog = new UpdateDialog(Context context, String title, String apkUrl);
