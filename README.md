@@ -14,7 +14,7 @@ Add it in your root build.gradle at the end of repositories:
 Add the dependency
 ```aidl 
     dependencies {
-         compile 'com.github.JueShouGitHub:AndroidUpdateManager:v1.1'
+         compile 'com.github.JueShouGitHub:AndroidUpdateManager:v1.2'
 	    }
 ```
 
@@ -42,7 +42,7 @@ Add the dependency
 就一句话就够了；参数应该很简单了
 
 - context 这没什么可说的
-- title 进度框的标题，可以传空“”
+- title 进度框的标题，可以传空“”，此参数现在已然没用，直接传空
 - apkUrl 这就是下载apk的地址，不要传错了
 
 ###### 呃，然后就没了。当然了，是不是有新版本当然还是自己和后台的交互得到结果了
