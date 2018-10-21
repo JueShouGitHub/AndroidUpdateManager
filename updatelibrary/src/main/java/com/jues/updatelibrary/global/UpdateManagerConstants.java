@@ -12,7 +12,7 @@ import android.content.pm.PackageManager;
  * 修订：====================
  */
 
-public class Constants {
+public class UpdateManagerConstants {
     //检测新版本
     public static final String VERSION = "version";
     public static final String NEW_APP_URL = "newVersionUrl";
